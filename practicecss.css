@@ -1,0 +1,30 @@
+    
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+table,tr,td,th {
+    border-collapse: collapse;
+    border: 2px solid black;
+    
+}
+table{
+    padding: 40px 40px 40px 40px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}
+
+tr:nth-child(2n) td:nth-child(2n+1),
+tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: black;
+}
+
+tr:nth-child(2n) td:nth-child(2n),
+tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: white; 
+} 
